@@ -1,0 +1,15 @@
+{
+  "id": "pdf-plus",
+  "name": "PDF++",
+  "version": "0.40.31-vi.1",
+  "minAppVersion": "1.5.8",
+  "description": "Công cụ chú thích và xem PDF tích hợp với Obsidian — giao diện Việt hóa.",
+  "author": "Ryota Ushio",
+  "authorUrl": "https://github.com/RyotaUshio",
+  "fundingUrl": {
+    "GitHub Sponsor": "https://github.com/sponsors/RyotaUshio",
+    "Buy Me a Coffee": "https://www.buymeacoffee.com/ryotaushio",
+    "Ko-fi": "https://ko-fi.com/ryotaushio"
+  },
+  "isDesktopOnly": false
+}
