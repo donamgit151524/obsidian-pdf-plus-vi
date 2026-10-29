@@ -1,7 +1,7 @@
 {
   "id": "pdf-plus",
   "name": "PDF++",
-  "version": "0.40.31-vi.1",
+  "version": "0.40.31-vi.2",
   "minAppVersion": "1.5.8",
   "description": "Công cụ chú thích và xem PDF tích hợp với Obsidian — giao diện Việt hóa.",
   "author": "Ryota Ushio",

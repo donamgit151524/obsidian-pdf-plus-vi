@@ -1,6 +1,6 @@
 # PDF++ — bản Việt hóa cá nhân
 
-Phiên bản: 0.40.31-vi.1. Bản nền: PDF++ 0.40.31.
+Phiên bản: 0.40.31-vi.2. Bản nền: PDF++ 0.40.31.
 
 ## Công dụng
 
@@ -53,14 +53,14 @@ ID vẫn là `pdf-plus`, dùng chung với plugin gốc. Không cài hai bản c
 
 ## Phạm vi Việt hóa
 
-Việt hóa 495 vị trí giao diện tĩnh: tên/mô tả cài đặt, các đề mục chính, tên lệnh, nút và trình đơn thao tác. Giữ nguyên ID, khóa cài đặt, cú pháp mẫu, chuỗi có biến, tên sản phẩm và liên kết tài liệu. Một số hướng dẫn Markdown/HTML dài, thông báo động và tài liệu ngoài vẫn bằng tiếng Anh; đây không phải bản dịch toàn bộ tài liệu PDF++.
+Việt hóa giao diện cài đặt, hướng dẫn trong plugin, lựa chọn thả xuống, trình đơn, thông báo động, chú giải bảng màu và sáu nguồn xem trước trang đăng ký với Obsidian. Bản vi.2 bổ sung 606 vị trí còn sót ngoài 495 vị trí của vi.1. Tên sản phẩm, cú pháp mã, mẫu, khóa cấu hình và thông tin gỡ lỗi kỹ thuật được giữ nguyên. Tài liệu trên website tác giả không thuộc gói dịch này.
 
 ## Nguồn, giấy phép và phát triển tiếp
 
 - Bản nền: [RyotaUshio/obsidian-pdf-plus 0.40.31](https://github.com/RyotaUshio/obsidian-pdf-plus/releases/tag/0.40.31), tác giả Ryota Ushio; giữ giấy phép MIT trong `LICENSE`.
 - [Tài liệu chính thức](https://ryotaushio.github.io/obsidian-pdf-plus/) giải thích chi tiết các tính năng. Đây là bản tùy chỉnh cá nhân, không phải bản phát hành của tác giả gốc.
 - `source-bundle.zip` chứa mã nguồn upstream đúng phiên bản, bản diff và từ điển/công cụ Việt hóa. Giải nén để xem `source/` và `patch-tools/`.
-- Để áp dụng lại cho bundle gốc đúng phiên bản: đặt `apply.cjs` cạnh `vi.txt`, rồi chạy `node apply.cjs /duong-dan/main.js`. Công cụ sao lưu bundle trước khi sửa và kiểm tra cú pháp, ID lệnh, chuỗi mẫu có biến. Không chạy lại trên một bản đã dịch.
+- Để áp dụng lại cho bundle gốc đúng phiên bản: đặt `apply.cjs` cạnh `vi.txt`, đặt bundle gốc đúng phiên bản ở `main.js` và bản sao ở `main.js.before-vi.bak`, rồi chạy `node complete.cjs /duong-dan/main.js`. Công cụ dùng Acorn (kèm giấy phép), kiểm tra cú pháp, cấu trúc token thực thi, ID lệnh và khóa cài đặt. Chỉ thay phần văn bản của thông báo có biến; giữ nguyên biểu thức và dữ liệu cấu hình. Không chạy lại trên một bản đã dịch.
 - Khi phát hành bản mới: cập nhật `main.js`, tăng `version` trong `manifest.json`, cập nhật `versions.json` và gói nguồn. Workflow GitHub Actions tạo release theo phiên bản, đính kèm `main.js`, `manifest.json`, `styles.css` và `source-bundle.zip` để BRAT tải được. Một phiên bản đã phát hành không bị ghi đè tự động.
 
 Không bao gồm `data.json`, ghi chú hay thông tin đăng nhập của người dùng.
